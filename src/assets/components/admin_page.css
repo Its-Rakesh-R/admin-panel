@@ -1,0 +1,187 @@
+.admin-page{
+  background-color: #fff5;
+  backdrop-filter: blur(7px);
+  box-shadow: 0.2rem 0.3rem #0005;
+  overflow: hidden;
+  padding: 0 1rem;
+  width:90%;
+  height: 100%;
+  /* position: relative; */
+  border-radius: .8rem;
+}
+.head{
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: right;
+}
+.search{
+  width: 25%;
+  height: 100%;
+  background-color: #fff5;
+  padding: 0.2rem 0.8rem;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .2s;
+}
+.search:hover{
+  width: 30%;
+  height: 100%;
+  background-color: #fff8;
+  box-shadow: 0 0 1rem #0002 ;
+}
+.search input{
+  width: 100%;
+  padding: 0.2rem 0.5rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.search img{
+  width: 1.2rem;
+  height: 1.2rem;
+}
+.table-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 81.3vh;
+  overflow: auto
+}
+table{
+  width: 100%;
+  padding: 0 1rem;
+  background-color: #fffb;
+  margin: 0 .8rem;
+  border-radius: .6rem;
+  overflow: hidden;
+  border-collapse: collapse;
+}
+table::-webkit-scrollbar{
+  width: 0.4rem;
+  height: 0.4rem;
+}
+td, th{
+  text-align: left;
+  padding: 0.65rem;
+}
+thead th {
+  background-color: #d5d1defe;
+}
+tbody tr:nth-child(even) {
+  background-color: #0000000b;
+}
+.selected{
+  background-color: #fff6 !important;
+}
+.action-head{
+  display: flex;
+  justify-content: center;
+}
+.action{
+  display: flex;
+  justify-content: center;
+}
+.action button{
+  /* width: 2.5rem;
+  height: 2.5rem; */
+  padding: 0 15px;
+  background-color: transparent;
+  margin: 0;
+  outline: none;
+  border: none;
+}
+.edit{
+  color: #03045e;
+}
+.delete{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.delete div{
+  font-size: 25px;
+  height: 0.5em;
+  width: 0.4em;
+  border: 0.07em solid #c40233;
+  border-radius: 0 0 0.1em 0.1em;
+  background-image: linear-gradient(to right, transparent 0.17em, #c40233 0.17em, #c40233 0.24em, transparent 0.24em);
+  position: relative;
+}
+.delete div::before{
+  position: absolute;
+  content: "";
+  height: 0.07em;
+  width: 0.65em;
+  background-color: #c40233;
+  left: -0.125em;
+  bottom: 0.6em;
+}
+.delete div::after{
+  position: absolute;
+  content: "";
+  height: 0;
+  width: 0.25em;
+  border-bottom: 0.07em solid #c40233;
+  border-left: 0.02em solid transparent;
+  border-right: 0.02em solid transparent;
+  left: 0.055em;
+  bottom: 0.67em;
+}
+.footer{
+  padding: 0.5rem 0.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+.deleteAll{
+  background-color: #e01e37;
+  color: #fff;
+  height: 2.3rem;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: .2s;
+  
+}
+.deleteAll:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 0.4rem #0005;
+  border: none;
+  outline: none;
+}
+.deleteAll:active{
+  border: #e01e37;
+  outline: none;
+  border: none;
+  outline: none;
+}
+.pagination button{
+  margin-left: .5rem;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background-color: #0096c7;
+  color: white;
+}
+.disabled{
+  background-color: white !important;
+  color: #0005 !important;
+}
+.active{
+  background-color: white !important;
+  border: #0096c7 !important;
+  color: #0096c7 !important;
+}
+
+.inline-change{
+  border: #0000000b;
+  outline: none;
+  border-radius: .8rem;
+  height: 1.5rem;
+  width: 10rem;
+  padding: 0 1rem;
+  background-color: white;
+}

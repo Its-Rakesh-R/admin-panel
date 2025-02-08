@@ -1,0 +1,12 @@
+#background {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0 ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./assets/components/img/1_xMuIOwjliGUPjkzukeWKfw.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
